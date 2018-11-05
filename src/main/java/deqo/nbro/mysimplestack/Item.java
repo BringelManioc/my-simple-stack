@@ -18,4 +18,8 @@ public class Item {
         this.value = value;
     }
 
+    public String toString(){
+        return String.valueOf(value);
+    }
+
 }

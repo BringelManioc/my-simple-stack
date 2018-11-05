@@ -1,5 +1,7 @@
 package deqo.nbro.mysimplestack;
 
+import jdk.nashorn.internal.objects.NativeArray;
+
 import java.util.ArrayList;
 import java.util.EmptyStackException;
 import java.util.Stack;
@@ -49,5 +51,13 @@ public class MyStack implements SimpleStack
             stack.remove(getSize()-1);
             return tmp;
         }
+    }
+
+    public String toString(){
+        String toString="";
+        for (Item item: stack) {
+            toString += item.toString();
+        }
+        return toString;
     }
 }
