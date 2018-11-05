@@ -36,4 +36,9 @@ public class MyStackTest {
     public void testNewStackSize() {
         assertEquals("The size of a new stack should be zero",0,ms1.getSize());
     }
+
+    @Test (expected = EmptyStackException.class)
+    public void testPeekEmptyStack() throws EmptyStackException{
+        ms1.peeks();
+    }
 }
